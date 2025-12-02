@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'Lunea';
+  src: url('../assets/Lunea.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.main-footer{
+width: 100%;
+  height: 500px;
+  background-color: var(--verde);
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.redes{
+width: 350px;
+display: flex;
+flex-direction: column;
+margin: 50px;
+}
+.r-sociales {
+  color: #ffffff;
+  font-size: 0.8rem;
+  margin: 0 0 40px 0;
+  font-family: 'March';
+  text-decoration: none;
+  letter-spacing: 4px;
+}
+.name-r {
+    display: flex;
+    gap: 8px;
+}
+.text-contac{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+
+}
+.text-contac p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 5px 0;
+  font-family: 'Lunea';
+  letter-spacing: 2px;
+}
+/* Estilos existentes para los círculos */
+.circle-redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #a78274; /* o el color que estés usando */
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Animación de flote al hacer hover */
+.circle-redes:hover {
+  transform: translateY(-8px) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Opcional: Animación sutil continua cuando no hay hover */
+.circle-redes {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Para que la animación continua solo se active en hover */
+.circle-redes:hover {
+  transition: all 2s ease;
+  animation: alternate float-hover 1s ease-in-out infinite;
+}
+
+@keyframes float-hover {
+  0% {
+    transform: translateY(-8px) scale(1.1);
+  }
+  50% {
+    transform: translateY(-12px) scale(1.1);
+  }
+  100% {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+.info-text {
+width: 350px;
+}
+
+.contacto {
+   color: #ffffff;
+  font-size: 0.8rem;
+  margin: 0 0 30px 0;
+  font-family: 'March';
+  text-decoration: none;
+  letter-spacing: 4px;
+}
+
+.formulario-gmail {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: var(--verde);
+  border-radius: 8px;
+}
+
+.formulario-gmail h3 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 13px;
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-family: 'March';
+  text-align: center;
+}
+
+.formulario-gmail form div {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.formulario-gmail label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+  letter-spacing: 3px;
+  font-family: 'Lunea';
+}
+
+.formulario-gmail input,
+.formulario-gmail textarea {
+  width: 400px;
+  padding: 10px;
+  border: none; /* Quita todos los bordes */
+  border-bottom: 2px solid #ffffff; /* Solo borde inferior */
+  border-radius: 0; /* Quita bordes redondeados */
+  font-size: 16px;
+  ;
+  box-sizing: border-box;
+  background: transparent; /* Fondo transparente */
+  color: white; /* Texto blanco */
+}
+
+.formulario-gmail input:focus,
+.formulario-gmail textarea:focus {
+  outline: none;
+  border-color: #c9a86a;
+  color: white;
+}
+
+.formulario-gmail button {
+  background: #ffffff;
+  color: var(--verde);
+  padding: 12px 30px;
+  border: 2 solid var(--verde);
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: 'Lunea';
+  width: 400px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formulario-gmail button:hover {
+    background: #ebd5ab;
+  color: var(--verde);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-footer {
+    padding: 30px 15px;
+  }
+  
+  .formulario-gmail {
+    padding: 15px;
+  }
+}

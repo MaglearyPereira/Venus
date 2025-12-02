@@ -1,0 +1,80 @@
+
+@font-face {
+  font-family: 'Lunea';
+  src: url('../assets/Lunea.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.Text_A{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'March', sans-serif;
+     color: #5d4037;
+    margin: 0px 40px 40px 40px;
+
+}
+.some-class{
+display: flex;
+flex-direction: row;
+gap: 70px;
+}
+.content-img{
+    width: 600px;
+    height: 450px;
+}
+
+.imagen-S{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.content-principal{
+    width: 100%;
+    margin: auto;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+
+
+}
+.content-principal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg,#e1e1e1 0%, #f0e6d8 100%);
+  z-index: -2;
+}
+.content-utils{
+    display: flex;
+    flex-direction: column;
+   width: 600px;
+   gap: 25px;
+   height: 380px;
+   justify-content: center;
+   text-align: justify;
+}
+.h1-text{
+font-size: 14px;
+padding: 20px;
+font-family: 'March', sans-serif;
+color: #452f29;
+}
+
+.elegant-text{
+font-size: 20px;
+font-family: 'Lunea';
+color: #452f29;
+}
